@@ -12,7 +12,19 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://my-ghost-blog.com',
-        mail: {},
+        mail: {
+            fromaddress: '783814127@qq.com',
+            transport: 'SMTP',
+            options: {
+                host: 'smtp.qq.com',
+                secureConnection: false,
+                port: 25,
+                auth: {
+                    user: '783814127@qq.com',
+                    pass: 'qsc123456'
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
