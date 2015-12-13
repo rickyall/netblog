@@ -11,28 +11,28 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'http://dogsfund.cn',
         mail: {},
-        database: {
-            client: 'sqlite3',
-            connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
-            debug: false
-        },
+        // database: {
+        //     client: 'sqlite3',
+        //     connection: {
+        //         filename: path.join(__dirname, '/content/data/ghost.db')
+        //     },
+        //     debug: false
+        // },
 
         // 配置MySQL 数据库
-        /*database: {
+        database: {
             client: 'mysql',
             connection: {
-                host     : 'host',
-                user     : 'user',
-                password : 'password',
-                database : 'database',
+                host     : '127.0.0.1',
+                user     : 'root',
+                password : 'QSCqsc123',
+                database : 'ghost',
                 charset  : 'utf8'
             },
             debug: false
-        },*/
+        },
 
         server: {
             host: '127.0.0.1',
